@@ -1,2 +1,3 @@
 # monte-vim
-Monte syntax highlighting for vim
+
+Monte syntax highlighting for vim users.
