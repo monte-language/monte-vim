@@ -2,7 +2,7 @@
 " Language: Monte
 " Maintainer: Corbin Simpson <cds@corbinsimpson.com>
 " <http://github.com/MostAwesomeDude>
-" Latest Revision: December 25 2015
+" Latest Revision: Jan 10, 2016
 
 if exists("b:current_syntax")
     finish
@@ -11,7 +11,7 @@ endif
 " Keywords
 syn keyword monteKeyword as bind def else escape exit extends guards implements
 syn keyword monteKeyword in method pass var via
-syn keyword monteKeyword exports imports
+syn keyword monteKeyword exports import
 syn keyword monteNew fn interface object to
 syn keyword monteConditional catch if finally for match switch try when while
 syn keyword monteControl break continue return
