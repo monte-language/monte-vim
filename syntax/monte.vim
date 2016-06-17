@@ -51,7 +51,7 @@ syn match monteQLEscape '\$\\u[a-fA-F0-9]\{4\}' contained
 syn match monteQLEscape '\$\\U[a-fA-F0-9]\{8\}' contained
 
 " Universal scope
-syn keyword monteGuard List Map NullOk Pair Same Set
+syn keyword monteGuard List Map NullOk Pair Same Set Vow
 syn keyword monteGuard Any Bool Bytes Char Empty Double Int Str Void
 syn keyword monteGuard Tag Term
 syn keyword monteGuard Near
