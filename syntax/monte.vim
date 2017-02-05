@@ -82,9 +82,13 @@ syn match monteOperator ' &!'
 syn match monteOperator ' ||'
 syn match monteOperator ' \*\*'
 syn match monteOperator '\w\+='
-
-" Pairs
-syn match montePair '=>'
+" [=> module
+" (=> keywordArg
+" (arg, => keywordArg
+syn match monteOperator '\(\[\|,\s\+\|(\s*\)\@<==>'
+" Pairs - this can be folded into the regex above, however, this
+" helps keep track of different uses
+syn match monteOperator '\(\w\+"\=\s\+\)\@<==>'
 
 " Errors
 syn match monteEqualError ' =[^~=>]'
@@ -111,7 +115,7 @@ hi def link monteHole Identifier
 hi def link monteQLEscape SpecialChar
 hi def link monteGuard Type
 hi def link monteOperator Operator
-hi def link montePair Delimiter
+" hi def link montePair Delimiter
 hi def link monteEqualError Error
 " hi def link monteIdentifier Identifier
 
